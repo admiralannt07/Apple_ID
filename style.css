@@ -1,0 +1,1551 @@
+/* Color Variables */
+:root {
+  --global-nav-color: rgba(22, 22, 23, 1);
+  --global-nav-color-scrolled: rgba(22, 22, 23, 0.8);
+  --global-nav-text-color: rgba(255, 255, 255, 0.8);
+  --text-white: rgb(255, 255, 255);
+  --text-black: rgb(0, 0, 0);
+  --footer-text-color: rgba(0, 0, 0, 0.56);
+  --footer-border-color: rgba(0, 0, 0, 0.16);
+  --footer-link-color: rgba(0, 0, 0, 0.72);
+  --primary-color: #0071e3;
+  --light-color: #f5f5f7;
+  --light-hover-color: #fff;
+  --hover-color: #0077ed;
+  --carousel-height: 665px;
+  --side-scale: 0.98;
+  --side-dim: 0.68;
+  --anim-ease: cubic-bezier(0.85, 0.44, 0.54, 0.94);
+  --anim-ms: 900ms;
+  --active-gap: 12px;
+}
+
+/* SF Pro Display fonts */
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("./assets/fonts/SF-Pro-Display-Black.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("./assets/fonts/SF-Pro-Display-BlackItalic.woff2") format("woff2");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("./assets/fonts/SF-Pro-Display-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("./assets/fonts/SF-Pro-Display-BoldItalic.woff2") format("woff2");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("./assets/fonts/SF-Pro-Display-Heavy.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("./assets/fonts/SF-Pro-Display-HeavyItalic.woff2") format("woff2");
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("./assets/fonts/SF-Pro-Display-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("./assets/fonts/SF-Pro-Display-LightItalic.woff2") format("woff2");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("./assets/fonts/SF-Pro-Display-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("./assets/fonts/SF-Pro-Display-MediumItalic.woff2") format("woff2");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("./assets/fonts/SF-Pro-Display-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("./assets/fonts/SF-Pro-Display-RegularItalic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("./assets/fonts/SF-Pro-Display-Semibold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("./assets/fonts/SF-Pro-Display-SemiboldItalic.woff2") format("woff2");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("./assets/fonts/SF-Pro-Display-Thin.woff2") format("woff2");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("./assets/fonts/SF-Pro-Display-ThinItalic.woff2") format("woff2");
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("./assets/fonts/SF-Pro-Display-Ultralight.woff2") format("woff2");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("./assets/fonts/SF-Pro-Display-UltralightItalic.woff2") format("woff2");
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* SF Pro Rounded */
+@font-face {
+  font-family: "SF Pro Rounded";
+  src: url("./assets/fonts/SF-Pro-Rounded-Black.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SF Pro Rounded";
+  src: url("./assets/fonts/SF-Pro-Rounded-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SF Pro Rounded";
+  src: url("./assets/fonts/SF-Pro-Rounded-Heavy.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SF Pro Rounded";
+  src: url("./assets/fonts/SF-Pro-Rounded-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SF Pro Rounded";
+  src: url("./assets/fonts/SF-Pro-Rounded-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SF Pro Rounded";
+  src: url("./assets/fonts/SF-Pro-Rounded-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SF Pro Rounded";
+  src: url("./assets/fonts/SF-Pro-Rounded-Semibold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SF Pro Rounded";
+  src: url("./assets/fonts/SF-Pro-Rounded-Thin.woff2") format("woff2");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SF Pro Rounded";
+  src: url("./assets/fonts/SF-Pro-Rounded-Ultralight.woff2") format("woff2");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* SF Pro Text */
+@font-face {
+  font-family: "SF Pro Text";
+  src: url("./assets/fonts/SF-Pro-Text-Black.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SF Pro Text";
+  src: url("./assets/fonts/SF-Pro-Text-BlackItalic.woff2") format("woff2");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SF Pro Text";
+  src: url("./assets/fonts/SF-Pro-Text-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SF Pro Text";
+  src: url("./assets/fonts/SF-Pro-Text-BoldItalic.woff2") format("woff2");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SF Pro Text";
+  src: url("./assets/fonts/SF-Pro-Text-Heavy.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SF Pro Text";
+  src: url("./assets/fonts/SF-Pro-Text-HeavyItalic.woff2") format("woff2");
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SF Pro Text";
+  src: url("./assets/fonts/SF-Pro-Text-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SF Pro Text";
+  src: url("./assets/fonts/SF-Pro-Text-LightItalic.woff2") format("woff2");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SF Pro Text";
+  src: url("./assets/fonts/SF-Pro-Text-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SF Pro Text";
+  src: url("./assets/fonts/SF-Pro-Text-MediumItalic.woff2") format("woff2");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SF Pro Text";
+  src: url("./assets/fonts/SF-Pro-Text-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SF Pro Text";
+  src: url("./assets/fonts/SF-Pro-Text-RegularItalic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SF Pro Text";
+  src: url("./assets/fonts/SF-Pro-Text-Semibold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SF Pro Text";
+  src: url("./assets/fonts/SF-Pro-Text-SemiboldItalic.woff2") format("woff2");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SF Pro Text";
+  src: url("./assets/fonts/SF-Pro-Text-Thin.woff2") format("woff2");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SF Pro Text";
+  src: url("./assets/fonts/SF-Pro-Text-ThinItalic.woff2") format("woff2");
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SF Pro Text";
+  src: url("./assets/fonts/SF-Pro-Text-Ultralight.woff2") format("woff2");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SF Pro Text";
+  src: url("./assets/fonts/SF-Pro-Text-UltralightItalic.woff2") format("woff2");
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+/* general style */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "SF Pro Text", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
+    Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.text-white {
+  color: white;
+}
+
+/* button style */
+.btn {
+  font-size: 17px;
+  line-height: 1;
+  font-weight: 400;
+  letter-spacing: -0.022em;
+  border: 1px solid var(--primary-color);
+  padding: 11px 21px;
+  color: var(--text-white);
+  border-radius: 980px;
+  transition: all 0.5 ease-in-out;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--primary-color);
+}
+
+.btn-white {
+  border: 1px solid transparent;
+  background-color: var(--light-color);
+  color: var(--text-black);
+}
+
+.btn-secondary-white {
+  background-color: transparent;
+  border-color: var(--light-color);
+  color: var(--light-color);
+}
+
+.btn-white:hover {
+  background-color: var(--light-hover-color);
+}
+
+.btn-primary:hover {
+  background-color: var(--hover-color);
+}
+
+.btn-secondary:hover {
+  background-color: var(--hover-color);
+  color: var(--text-white);
+}
+
+/* header style */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--global-nav-color);
+  backdrop-filter: blur(20px);
+  z-index: 1000;
+  animation-name: change-opacity-header;
+  animation-timeline: scroll(root block);
+  animation-range: 0 200px;
+  animation-fill-mode: forwards;
+}
+
+@keyframes change-opacity-header {
+  from {
+    background-color: var(--global-nav-color);
+  }
+  to {
+    background-color: var(--global-nav-color-scrolled);
+  }
+}
+
+.navbar {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 16px;
+  font-size: 12px;
+  letter-spacing: -0.01em;
+  line-height: 1;
+}
+
+.nav-link,
+.nav-logo {
+  font-family: "SF Pro Text", "SF Pro Rounded", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-weight: 300;
+  fill: var(--global-nav-text-color);
+  text-decoration: none;
+  color: var(--global-nav-text-color);
+}
+
+.icon-apple {
+  width: 14px;
+  height: 44px;
+}
+
+.icon-search {
+  width: 15px;
+  height: 44px;
+}
+
+/* The dropdown menu container */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 100%;
+  padding-top: 40px;
+  padding-left: 16px; /* Increased top padding */
+  display: flex;
+  gap: 80px; /* Adjusted gap between sections */
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 400ms ease, visibility 80ms ease, transform 200ms ease;
+  transform: translateX(-50%) translateY(-10px);
+}
+
+.nav-link:hover,
+.nav-logo:hover {
+  color: #ffffff;
+  fill: #ffffff;
+  transition: all 400ms ease;
+  cursor: pointer;
+}
+
+.dropdown-menu.active {
+  visibility: visible;
+  pointer-events: auto;
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+  transition-delay: 0.2s;
+}
+
+/* Styling for sections within the dropdown */
+.dropdown-section {
+  display: flex;
+  flex-direction: column;
+  gap: 6px; /* Reduced gap for tighter link spacing */
+  white-space: nowrap;
+}
+
+/* Style for the grey heading text */
+.dropdown-heading {
+  font-size: 12px;
+  color: #86868b;
+  margin-bottom: 12px;
+}
+
+/* Style for the large, bold links */
+.dropdown-link-large {
+  font-size: 24px;
+  font-family: "SF Pro Display", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
+    Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 600;
+  color: #e8e8ed;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  padding: 4px 0; /* Add padding for better hover area */
+}
+.dropdown-link-large:hover {
+  color: #ffffff;
+}
+
+/* Style for the smaller, regular links */
+.dropdown-link-small {
+  font-size: 12px;
+  font-family: "SF Pro Display", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
+    Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  color: #e8e8ed;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  padding: 4px 0; /* Add padding for better hover area */
+}
+.dropdown-link-small:hover {
+  color: #ffffff;
+}
+
+/* A simple span to create the vertical space in the first column */
+.dropdown-spacer {
+  height: 12px;
+}
+
+.nav-dropdown-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0; /* Hidden by default */
+  background-color: var(--global-nav-color);
+  z-index: -1; /* Place it behind the nav links */
+  transition: height 400ms var(--anim-ease);
+  opacity: 1;
+}
+
+.page-blur-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  /*hide by default */
+  visibility: hidden;
+  opacity: 0;
+  /* no interactions */
+  pointer-events: none;
+  transition: opacity 400ms var(--anim-ease), visibility 400ms var(--anim-ease);
+}
+
+.page-blur-overlay.active {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto; /* Allow interaction if needed, though usually not */
+}
+
+/* Hide mobile-only elements on desktop */
+.burger-menu,
+.burger-toggle,
+.nav-links-mobile {
+  display: none;
+}
+
+/* hero style */
+#hero-iphone-16-pro {
+  margin-top: 46px;
+  background-image: url("./assets/images/hero_iphone_16_pro.jpg");
+}
+
+#hero-iphone-16 {
+  margin-top: 12px;
+  background-image: url("./assets/images/hero_iphone_16.jpg");
+}
+
+#hero-macbook-air {
+  margin-top: 12px;
+  background-image: url("./assets/images/hero_macbook_air.jpg");
+}
+
+#hero-macbook-air h1,
+#hero-macbook-air p {
+  color: var(--text-black);
+}
+
+.product {
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  height: 580px;
+}
+
+.product-content {
+  display: flex;
+  color: var(--text-white);
+  flex-direction: column;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.product-content h1 {
+  font-size: 56px;
+  line-height: 1;
+  font-weight: 600;
+  margin-top: 6px;
+  letter-spacing: -0.005em;
+  font-family: "SF Pro Display", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
+    Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.product-content p {
+  font-size: 28px;
+  line-height: 1;
+  font-weight: 400;
+  letter-spacing: -0.007em;
+  margin-top: 6px;
+  font-family: "SF Pro Display", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
+    Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.cta-buttons {
+  margin-top: 19px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+/* product grid styling */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin: 12px;
+}
+
+.grid-product-items {
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 580px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.watch-10 {
+  background-image: url("./assets/images/grid_1.jpg");
+}
+
+.ipad-air {
+  background-image: url("./assets/images/grid_2.jpg");
+}
+
+.ipad-pro {
+  background-image: url("./assets/images/grid_3.jpg");
+}
+
+.airpods-pro {
+  justify-content: flex-end;
+  padding: 53px;
+  background-image: url("./assets/images/grid_4.jpg");
+}
+
+.macbook-pro {
+  background-image: url("./assets/images/grid_5.jpg");
+}
+
+.app-store {
+  background-image: url("./assets/images/grid_6.jpg");
+}
+
+.grid-product-items img {
+  margin-top: 56px;
+}
+
+.grid-product-items h5 {
+  font-size: 21px;
+  line-height: 1;
+  font-weight: 400;
+  letter-spacing: -0.007em;
+  margin-top: 6px;
+  font-family: "SF Pro Display", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
+    Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.grid-buttons .btn {
+  font-size: 14px;
+}
+
+.watch-10 img {
+  height: 53px;
+  width: auto;
+}
+
+.ipad-air img {
+  height: 33px;
+  width: auto;
+}
+
+.product-logo {
+  margin-bottom: 10px;
+}
+
+.product-items h2 {
+  font-size: 40px;
+  line-height: 1.1;
+  font-weight: 600;
+  letter-spacing: 0em;
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  margin-top: 53px;
+}
+
+.product-items p {
+  font-size: 21px;
+  line-height: 1.19048;
+  font-weight: 400;
+  letter-spacing: 0.001em;
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+/* carousel styling */
+#apple-tv {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.carousel-container {
+  position: relative;
+  margin: 0 auto 12px;
+  height: var(--carousel-height);
+  overflow: hidden;
+  isolation: isolate;
+}
+
+/* THE NEW TRACK LOGIC */
+.carousel-track {
+  display: flex; /* Lays out items in a row */
+  gap: var(--active-gap); /* This creates the 12px gap! */
+  height: 100%;
+  /* The magic happens here: we transition the transform property */
+  transition: transform var(--anim-ms) var(--anim-ease);
+}
+
+.carousel-item {
+  position: relative;
+  width: 1265px;
+  flex-shrink: 0; /* Prevents items from shrinking */
+  height: 100%;
+  overflow: hidden;
+  transition: transform var(--anim-ms) var(--anim-ease), filter var(--anim-ms) var(--anim-ease);
+  cursor: pointer; /* Makes it clickable */
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-item picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Apply the overlay to ALL items by default */
+.carousel-item::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(255, 255, 255, var(--side-dim));
+  pointer-events: none;
+  opacity: 1; /* Default to visible */
+  /* KEY: Transition the opacity smoothly with your new timing */
+  transition: opacity var(--anim-ms) var(--anim-ease);
+}
+
+/* When an item is active, just fade the overlay out */
+.carousel-item.is-active::after {
+  opacity: 0;
+}
+
+.is-resetting .carousel-item::after {
+  transition: none;
+}
+
+/* This fixes the content fade-up flash */
+.is-resetting .carousel-item.is-active .carousel-content {
+  transition: none;
+}
+
+/* CONTENT ANIMATIONS */
+.carousel-content {
+  position: absolute;
+  bottom: 56px;
+  left: 70px;
+  z-index: 5;
+  opacity: 0; /* Hidden by default */
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: opacity var(--anim-ms) var(--anim-ease), transform var(--anim-ms) var(--anim-ease);
+  transform: translateY(12px);
+  pointer-events: none;
+}
+
+/* Fade up for the active item */
+.carousel-item.is-active .carousel-content {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 250ms; /* Delay to let it slide into place first */
+}
+
+/* Fade down for the item that is leaving */
+.carousel-item.is-leaving .carousel-content {
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity var(--anim-ms) var(--anim-ease), transform var(--anim-ms) var(--anim-ease); /* Faster fade out */
+  transition-delay: 0ms;
+}
+
+.carousel-content p {
+  color: var(--text-white);
+  font-size: 20px;
+  letter-spacing: 0em;
+  line-height: 1.1;
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
+}
+
+/* --- DOTS with Background Animation --- */
+.carousel-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+.carousel-controls .item {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.54);
+  cursor: pointer;
+  /* A transition provides a fallback and smooth color change */
+  transition: background-color 280ms var(--anim-ease);
+}
+/* This class defines the final state of the active dot */
+.carousel-controls .item.is-active {
+  background: rgba(0, 0, 0, 0.85);
+}
+/* Your requested keyframe animation */
+@keyframes backgroundChange {
+  from {
+    background: rgba(0, 0, 0, 0.54);
+  }
+  to {
+    background: rgba(0, 0, 0, 0.85);
+  }
+}
+/* The temporary class to trigger the animation */
+.carousel-controls .item.change {
+  /* A faster animation feels more responsive for dots */
+  animation: backgroundChange 700ms var(--anim-ease);
+}
+
+/* footer style */
+footer {
+  background-color: rgb(245, 245, 247);
+  color: var(--footer-text-color);
+  font-size: 12px;
+  padding-top: 12px;
+  font-weight: 400;
+}
+
+footer ol {
+  padding: 0 17px;
+}
+
+.footnote {
+  font-size: 12px;
+  color: var(--footer-text-color);
+  padding: 5px 0;
+}
+
+.line {
+  border: 0;
+  border-top: 1px solid var(--footer-border-color);
+  margin: 20.6px 0;
+}
+
+.airpods-desc,
+.subscribe {
+  padding-bottom: 9.6px;
+}
+
+footer ul {
+  list-style: none;
+}
+
+.footer-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.footer-link {
+  color: var(--footer-link-color);
+}
+
+.retailer-link {
+  margin-top: 34px;
+}
+
+.footer-list ul {
+  display: flex;
+  flex-direction: column;
+  gap: 9.6px;
+  margin-bottom: 20px;
+}
+
+.footer-list ul li strong {
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.88);
+}
+
+.retailer-link a {
+  color: var(--primary-color);
+}
+
+.list-copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 18px;
+}
+
+/* responsive tablet */
+@media (max-width: 1068px) {
+  .btn {
+    padding: 11px 21px;
+  }
+  body::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* product styling mobile */
+
+  .product-content h1 {
+    font-size: 48px;
+  }
+
+  .product-content p {
+    font-size: 23px;
+  }
+
+  /* grid styling mobile */
+  .grid-product-items {
+    height: 490px;
+    text-align: center;
+  }
+
+  .grid-product-items h5 {
+    font-size: 19px;
+  }
+
+  .product-items h2 {
+    font-size: 32px;
+  }
+
+  .product-items p {
+    font-size: 19px;
+  }
+
+  .watch-10 img {
+    height: 48px;
+    width: auto;
+  }
+
+  .ipad-air img {
+    height: 26px;
+    width: auto;
+  }
+
+  /* slider mobile */
+  .carousel-container {
+    height: auto;
+  }
+  .carousel-item {
+    max-width: 687px;
+    max-height: 367.7px;
+  }
+
+  .carousel-track {
+    height: auto;
+  }
+
+  .carousel-content {
+    bottom: 0;
+    left: 0;
+    padding-left: 30px;
+    padding-bottom: 24px;
+    gap: 20px;
+  }
+
+  .carousel-desc {
+    max-width: 354px;
+  }
+  .carousel-content .btn {
+    font-size: 14px;
+  }
+
+  .carousel-content p {
+    font-size: 18px;
+  }
+
+  /* footer */
+  footer {
+    padding: 0 16px;
+  }
+
+  footer ol {
+    padding-top: 17px;
+  }
+
+  .footer-list {
+    margin-left: 6px;
+  }
+
+  .list-copyright-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 18px;
+    gap: 6px;
+  }
+
+  .country-text {
+    margin-top: 20.6px;
+    color: rgba(0, 0, 0, 0.7);
+  }
+  .copyright-text {
+    margin-top: 14px;
+  }
+
+  .privacy-text {
+    color: rgba(0, 0, 0, 0.7);
+  }
+
+  .retailer-link {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 920px) {
+  /* Hide the desktop nav links */
+  .nav-item {
+    display: none;
+  }
+
+  /* --- Mobile Header Layout --- */
+  .navbar {
+    padding: 0 22px;
+  }
+  .nav-controls {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .nav-controls .nav-link {
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar > .nav-logo,
+  .navbar > .nav-controls > .nav-link {
+    opacity: 1;
+    pointer-events: auto;
+    /* The transition is defined here, on the base state */
+    transition: opacity 400ms var(--anim-ease);
+  }
+
+  .icon-apple {
+    width: 18px;
+    height: 48px;
+  }
+
+  .icon-search {
+    width: 15px;
+    height: 44px;
+  }
+
+  .burger-menu {
+    height: 44px;
+    width: 44px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 12px;
+    cursor: pointer;
+    z-index: 1002;
+  }
+  .burger-menu button {
+    all: unset;
+    display: block;
+    position: relative;
+    height: 12px;
+    width: 17px;
+  }
+  .burger-container {
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    transition: transform 0.2s ease-in-out 0.1s;
+  }
+  .line {
+    height: 100%;
+    width: 100%;
+    background: var(--global-nav-text-color);
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  }
+  .burger-container.container-top {
+    transform: translateY(-4px);
+  }
+  .burger-container.container-bottom {
+    transform: translateY(4px);
+  }
+
+  /* --- Mobile Menu Container --- */
+  .nav-links-mobile {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: var(--global-nav-color);
+    flex-direction: column;
+    padding: 80px 45px 0;
+    opacity: 1;
+    visibility: hidden;
+    z-index: -1;
+    transition: height 400ms var(--anim-ease), visibility 0.4s var(--anim-ease);
+  }
+
+  /* --- Mobile Menu Links --- */
+  .nav-link-mobile {
+    color: #e8e8ed;
+    text-decoration: none;
+    font-size: 27px;
+    font-weight: 600;
+
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.2s var(--anim-ease), transform 0.2s var(--anim-ease);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* Style the arrow wrapper */
+  .nav-link-mobile-arrow {
+    display: flex;
+    justify-content: space-between;
+    opacity: 0; /* Hidden by default */
+    transform: translateX(5px); /* Start slightly to the right */
+    transition: opacity 0.3s var(--anim-ease), transform 0.3s var(--anim-ease);
+  }
+
+  /* Style the SVG icon itself */
+  .nav-link-mobile-arrow svg {
+    fill: var(--global-nav-text-color);
+    transform: scaleX(-1); /* Flip the arrow to point right */
+    width: 9px; /* Adjusted size */
+    height: 48px;
+  }
+
+  /* Show the arrow on hover */
+  .nav-link-mobile:hover .nav-link-mobile-arrow {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  /* 1. Fade out the header icons when menu is active */
+
+  .header.mobile-menu-active .nav-logo,
+  .header.mobile-menu-active .nav-controls .nav-link {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  /* 2. Animate the burger into an 'X' */
+  .header.mobile-menu-active .burger-container {
+    transform: none;
+    transition-delay: 0s;
+  }
+  .header.mobile-menu-active .line {
+    transition-delay: 0.2s;
+    background-color: #fff; /* Make X icon white */
+  }
+  .header.mobile-menu-active .line-top {
+    transform: rotate(45deg);
+  }
+  .header.mobile-menu-active .line-bottom {
+    transform: rotate(-45deg);
+  }
+
+  /* 3. Show the mobile menu container */
+  .header.mobile-menu-active .nav-links-mobile {
+    visibility: visible;
+    height: 120vh;
+  }
+
+  /* 4. Animate the links into view with a stagger effect */
+  .header.mobile-menu-active .nav-links-mobile .nav-link-mobile {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Staggered delay for link animation */
+  .header.mobile-menu-active .nav-links-mobile .nav-link-mobile:nth-child(1) {
+    transition-delay: 0.2s;
+  }
+  .header.mobile-menu-active .nav-links-mobile .nav-link-mobile:nth-child(2) {
+    transition-delay: 0.25s;
+  }
+  .header.mobile-menu-active .nav-links-mobile .nav-link-mobile:nth-child(3) {
+    transition-delay: 0.3s;
+  }
+  .header.mobile-menu-active .nav-links-mobile .nav-link-mobile:nth-child(4) {
+    transition-delay: 0.35s;
+  }
+  .header.mobile-menu-active .nav-links-mobile .nav-link-mobile:nth-child(5) {
+    transition-delay: 0.4s;
+  }
+  .header.mobile-menu-active .nav-links-mobile .nav-link-mobile:nth-child(6) {
+    transition-delay: 0.45s;
+  }
+  .header.mobile-menu-active .nav-links-mobile .nav-link-mobile:nth-child(7) {
+    transition-delay: 0.5s;
+  }
+  .header.mobile-menu-active .nav-links-mobile .nav-link-mobile:nth-child(8) {
+    transition-delay: 0.55s;
+  }
+  .header.mobile-menu-active .nav-links-mobile .nav-link-mobile:nth-child(9) {
+    transition-delay: 0.6s;
+  }
+
+  /* footer */
+  .footer-list {
+    display: none;
+  }
+
+  .list-copyright {
+    display: none;
+  }
+
+  /* accordion */
+  .accordion {
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid var(--footer-border-color);
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    font-size: 12px;
+    position: relative;
+    transition: 0.4s;
+    cursor: pointer;
+  }
+
+  .accordion:after {
+    content: url('data:image/svg+xml;utf,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" /></svg>');
+    position: absolute;
+    color: var(--text-black);
+    right: 20px;
+    top: 25%;
+    height: 16px;
+    width: 16px;
+    transform: translate(-50%);
+    transform: scaleY(1);
+    transition: transform 0.2s;
+  }
+
+  .accordion.active::after {
+    transform: scaleY(-1);
+  }
+
+  .panel {
+    padding: 0 16px;
+    background-color: transparent;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-in-out;
+  }
+
+  .panel ul {
+    display: block;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 6px;
+  }
+
+  #last-line {
+    display: none;
+  }
+}
+
+@media (max-width: 541px) {
+  /* product styling */
+  .btn {
+    padding: 7px 15px;
+    font-size: 14px;
+  }
+
+  .product {
+    height: 500px;
+  }
+
+  #hero-iphone-16-pro .product-content {
+    transform: translateY(240%);
+  }
+
+  #hero-iphone-16 .product-content {
+    padding-top: 37px;
+  }
+
+  .product-content h1 {
+    font-size: 32px;
+  }
+
+  .product-content p {
+    font-size: 18px;
+  }
+
+  /* hero style */
+  #hero-iphone-16-pro {
+    margin-top: 46px;
+    background-image: url("./assets/images/hero_responsive_iphone-16-pro.jpg");
+  }
+
+  #hero-iphone-16 {
+    margin-top: 12px;
+    background-image: url("./assets/images/hero_responsive_iphone-16.jpg");
+  }
+
+  #hero-macbook-air {
+    margin-top: 12px;
+    background-image: url("./assets/images/hero_responsive_macbook.jpg");
+  }
+
+  /* grid style */
+  .grid-container {
+    grid-template-columns: repeat(1, 1fr);
+    margin: 12px 0;
+  }
+
+  .watch-10 {
+    background-image: url("./assets/images/resp_grid_item_1.jpg");
+  }
+
+  .ipad-air {
+    background-image: url("./assets/images/resp_grid_item_2.jpg");
+  }
+
+  .ipad-pro {
+    background-image: url("./assets/images/resp_grid_item_3.jpg");
+  }
+
+  .airpods-pro {
+    background-image: url("./assets/images/resp_grid_item_4.jpg");
+  }
+
+  .macbook-pro {
+    background-image: url("./assets/images/resp_grid_item_5.jpg");
+  }
+
+  .app-store {
+    background-image: url("./assets/images/resp_grid_item_6.jpg");
+  }
+
+  /* carousel style */
+  .carousel-item {
+    max-width: 274px;
+    max-height: 495px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .carousel-content {
+    flex-direction: column-reverse;
+    padding: 24px 8px;
+  }
+
+  #item-2 .carousel-content {
+    padding-left: 20%;
+  }
+
+  #item-3 .carousel-content {
+    padding-left: 15%;
+  }
+
+  #item-6 .carousel-content {
+    padding-left: 6.5%;
+  }
+
+  .dot {
+    display: none;
+  }
+
+  .carousel-content p {
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 8px;
+    z-index: 1001;
+  }
+
+  .carousel-content:after {
+    content: "";
+    background-image: url("./assets/images/tv plus.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    width: 68px;
+    height: 33px;
+    bottom: 450px;
+  }
+
+  #item-1 .carousel-content:before {
+    content: "";
+    background-image: url("./assets/images/carousel_title_1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    width: 220px;
+    height: 54px;
+    bottom: 390px;
+  }
+
+  #item-2 .carousel-content:before {
+    content: "";
+    background-image: url("./assets/images/carousel_title_2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    width: 220px;
+    height: 54px;
+    bottom: 390px;
+  }
+  #item-3 .carousel-content:before {
+    content: "";
+    background-image: url("./assets/images/carousel_title_3.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    width: 220px;
+    height: 54px;
+    bottom: 390px;
+  }
+  #item-4 .carousel-content:before {
+    content: "";
+    background-image: url("./assets/images/carousel_title_4.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    width: 220px;
+    height: 54px;
+    bottom: 390px;
+  }
+  #item-5 .carousel-content:before {
+    content: "";
+    background-image: url("./assets/images/carousel_title_5.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    width: 220px;
+    height: 54px;
+    bottom: 390px;
+  }
+  #item-6 .carousel-content:before {
+    content: "";
+    background-image: url("./assets/images/carousel_title_6.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    width: 220px;
+    height: 54px;
+    bottom: 390px;
+  }
+  #item-7 .carousel-content:before {
+    content: "";
+    background-image: url("./assets/images/carousel_title_7.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    width: 220px;
+    height: 54px;
+    bottom: 390px;
+  }
+  #item-8 .carousel-content:before {
+    content: "";
+    background-image: url("./assets/images/carousel_title_8.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    width: 220px;
+    height: 54px;
+    bottom: 390px;
+  }
+}
