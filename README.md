@@ -29,8 +29,8 @@ Instead of a boring features list, here's a list of things that made me question
 + #### 🎨 Pixel-Perfect Agony: 
 I now have an unhealthy relationship with my browser's inspector. I spent hours nudging pixels to get the padding, margins, and gaps to match the original. I have immense respect for the UI designers who do this daily.
 
-+ #### ✨ "Smooth" Scroll Animations: 
-All those slick, on-scroll animations are handled with Vanilla JS and the Intersection Observer API. This was a brutal but enlightening fight against performance issues and getting the timing just right so it didn't feel janky.
++ #### ✨ "Smooth" Animations: 
+All those slick, navbar and carousels animations are handled with Vanilla JS and the Intersection Observer API. This was a brutal but enlightening fight against performance issues and getting the timing just right so it didn't feel janky.
 
 + #### 📱 Actually Responsive Design: 
 Making this look good on a giant monitor is one thing. Making it not completely fall apart on a phone is another. This clone handles multiple breakpoints to mimic the real site's responsive behavior.
